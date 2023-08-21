@@ -400,7 +400,7 @@ class WorkspaceCommands(cmd2.CommandSet):
                     )
                 data.append(
                     [
-                        "\n".join(item) if type(item) == list else item
+                        "\n".join(item) if  if isinstance(item, list) else item
                         for item in workspace_data.values()
                     ]
                 )
