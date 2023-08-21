@@ -35,6 +35,7 @@ before_script:
 
 stages:
     - SAST
+    - .pre
     - testing
     - publish
     - deploy
